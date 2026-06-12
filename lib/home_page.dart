@@ -169,7 +169,7 @@ class _HomePageUIState extends State<HomePageUI> {
                             ),
                             const SizedBox(height: 14),
                             DropdownButtonFormField<String>(
-                              value: selectedType,
+                              initialValue: selectedType,
                               decoration: _dialogInputDecoration(
                                 context: statefulContext,
                                 label: 'Type',

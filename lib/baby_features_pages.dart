@@ -19,7 +19,7 @@ class EmergencyPage extends StatelessWidget {
       child: ListView.separated(
         padding: EdgeInsets.zero,
         itemCount: items.length,
-        separatorBuilder: (_, __) => const SizedBox(height: 12),
+        separatorBuilder: (_, _) => const SizedBox(height: 12),
         itemBuilder: (context, index) {
           final title = items[index];
 
@@ -263,9 +263,9 @@ class _FeedingSleepPageState extends State<FeedingSleepPage> {
 
           final docs = snapshot.data!.docs;
           final totalFeeds = docs.length;
-          final totalSleep = docs.fold<double>(0, (sum, doc) {
+          final totalSleep = docs.fold<double>(0, (total, doc) {
             final data = doc.data();
-            return sum + _parseSleepHours(data['sleep']?.toString() ?? '');
+            return total + _parseSleepHours(data['sleep']?.toString() ?? '');
           });
 
           return ListView(

@@ -49,7 +49,7 @@ class LearningPage extends StatelessWidget {
       child: ListView.separated(
         padding: EdgeInsets.zero,
         itemCount: topics.length,
-        separatorBuilder: (_, __) => const SizedBox(height: 12),
+        separatorBuilder: (_, _) => const SizedBox(height: 12),
         itemBuilder: (context, index) {
           final item = topics[index];
 
@@ -213,7 +213,7 @@ class AlertsPage extends StatelessWidget {
       child: ListView.separated(
         padding: EdgeInsets.zero,
         itemCount: alerts.length,
-        separatorBuilder: (_, __) => const SizedBox(height: 12),
+        separatorBuilder: (_, _) => const SizedBox(height: 12),
         itemBuilder: (context, index) {
           final alert = alerts[index];
 
@@ -290,7 +290,7 @@ class ConsultationPage extends StatelessWidget {
       child: ListView.separated(
         padding: EdgeInsets.zero,
         itemCount: doctors.length,
-        separatorBuilder: (_, __) => const SizedBox(height: 12),
+        separatorBuilder: (_, _) => const SizedBox(height: 12),
         itemBuilder: (context, index) {
           final doctor = doctors[index];
 
